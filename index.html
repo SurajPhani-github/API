@@ -3,119 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Event Website</title>
+    <title>Unlock API</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="logo-container">
-            <img src="image1.jpg" alt="API Event Logo" class="logo">
-        </div>
-        <ul class="navbar">
-            <li><a href="#" data-target="home">Home</a></li>
-            <li><a href="#" data-target="what-is-api">What is API?</a></li>
-            <li><a href="#" data-target="how-apis-work">How APIs Work</a></li>
-            <li><a href="#" data-target="types-of-apis">Types of APIs</a></li>
-            <li><a href="#" data-target="rest-api-overview">REST API Overview</a></li>
-            <li><a href="#" data-target="api-security">API Security</a></li>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#what-is-api">What is an API?</a></li>
+            <li><a href="#how-apis-work">How APIs Work</a></li>
+            <li><a href="#types-of-apis">Types of APIs</a></li>
+            <li><a href="#rest-apis">REST APIs Overview</a></li>
+            <li><a href="#security-errors">API Security and Errors</a></li>
+            <li><a href="#activities">Hands-on Activities</a></li>
         </ul>
     </nav>
 
-    <!-- Additional Text Section (Between Navbar and Footer) -->
-    <section id="additional-info" class="section">
-        <h2><i class="fas fa-info-circle"></i> Why APIs Are Important</h2>
-        <div class="image-placeholder">
-            <img src="api_image.jpg" alt="API Overview Image">
-        </div>
-        <p>APIs enable different applications to communicate and share data. They have become an essential part of modern software development, especially in web and mobile app development. By using APIs, developers can leverage external services, integrate with other systems, and access large amounts of data.</p>
-        
-        <h3><i class="fas fa-users"></i> Benefits for Developers</h3>
-        <p>APIs allow developers to save time and resources. Instead of building everything from scratch, they can integrate pre-existing services and tools, enhancing functionality without reinventing the wheel.</p>
-        
-        <h3><i class="fas fa-cogs"></i> How APIs Improve Efficiency</h3>
-        <p>APIs streamline communication between different platforms, ensuring seamless data flow. With APIs, developers can create powerful and scalable applications by combining various services with minimal effort.</p>
-    </section>
-
-    <!-- Content Section -->
     <div class="content">
-        <!-- Home Section -->
-        <section id="home" class="section">
-            <h1><i class="fas fa-home"></i> Welcome to the API Event</h1>
-            <p>This website is an interactive guide to understanding APIs, how they work, and how they are used in real-world applications.</p>
-            <div class="image-placeholder">
-                <img src="home_image.jpg" alt="API Event Home">
+        <section id="home" class="section active">
+            <div class="main-container">
+                <h1>UNLOCK</h1>
+                <h2>API</h2>
+                <p class="subtitle">Unlock the power of technology<br>join us to master APIs and their security!</p>
+                <button class="register-btn">REGISTER NOW</button>
             </div>
         </section>
 
-        <!-- What is API Section -->
         <section id="what-is-api" class="section">
-            <h2><i class="fas fa-laptop-code"></i> What is an API?</h2>
-            <div class="image-placeholder">
-                <img src="what_is_api_image.jpg" alt="What is API">
-            </div>
-            <p>An API (Application Programming Interface) is a set of rules that allows different software applications to communicate with each other.</p>
-            <h3><i class="fas fa-utensils"></i> Real-World Example</h3>
-            <p>Imagine you’re at a restaurant. The customer (app) orders food from the waiter (API), and the waiter communicates with the kitchen (server) to prepare the order. The waiter then brings the food back to the customer.</p>
+            <h2>What is an API?</h2>
+            <p>An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other.</p>
         </section>
 
-        <!-- How APIs Work Section -->
-        <section id="how-apis-work" class="section">
-            <h2><i class="fas fa-sync-alt"></i> How APIs Work</h2>
-            <div class="image-placeholder">
-                <img src="how_apis_work_image.jpg" alt="How APIs Work">
-            </div>
-            <h3><i class="fas fa-utensils"></i> Analogy (Kitchen Analogy)</h3>
-            <p>In the kitchen analogy, the API acts as a waiter. The customer requests something (like data), and the waiter (API) takes that request to the kitchen (server), gets the result, and brings it back to the customer (app).</p>
-            <h3><i class="fas fa-arrow-right"></i> Request-Response Cycle</h3>
-            <p>The cycle is like placing an order at a restaurant: you make a request (e.g., GET data), and you get a response (the data you asked for).</p>
-        </section>
-
-        <!-- Types of APIs Section -->
-        <section id="types-of-apis" class="section">
-            <h2><i class="fas fa-cogs"></i> Types of APIs</h2>
-            <div class="image-placeholder">
-                <img src="types_of_apis_image.jpg" alt="Types of APIs">
-            </div>
-            <ul>
-                <li><strong>Public APIs:</strong> Open for everyone to use.</li>
-                <li><strong>Private APIs:</strong> Restricted access within an organization.</li>
-                <li><strong>Partner APIs:</strong> Shared with specific partners for collaboration.</li>
-            </ul>
-        </section>
-
-        <!-- REST API Overview Section -->
-        <section id="rest-api-overview" class="section">
-            <h2><i class="fas fa-cloud"></i> REST API Overview</h2>
-            <div class="image-placeholder">
-                <img src="rest_api_overview_image.jpg" alt="REST API Overview">
-            </div>
-            <p>REST APIs use standard HTTP methods: GET, POST, PUT, and DELETE to interact with resources.</p>
-            <ul>
-                <li>GET: Retrieve data</li>
-                <li>POST: Create new data</li>
-                <li>PUT: Update existing data</li>
-                <li>DELETE: Remove data</li>
-            </ul>
-        </section>
-
-        <!-- API Security Section -->
-        <section id="api-security" class="section">
-            <h2><i class="fas fa-shield-alt"></i> API Security</h2>
-            <div class="image-placeholder">
-                <img src="api_security_image.jpg" alt="API Security">
-            </div>
-            <p>Security in APIs is important to protect sensitive data and ensure only authorized users can access resources.</p>
-        </section>
+        <!-- Other sections as before -->
     </div>
 
-    <footer>
-        <p>© 2025 API Event | <a href="#">Privacy Policy</a></p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,28 +1,35 @@
-// Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', () => {
-    // Get all navbar links
-    const navLinks = document.querySelectorAll('nav ul li a');
-    
-    // Get all sections
+    const navLinks = document.querySelectorAll('.nav-links a');
     const sections = document.querySelectorAll('.section');
-    
-    // Function to hide all sections and show the clicked one
-    function showSection(target) {
+
+    function showSection(sectionId) {
         sections.forEach(section => {
             section.classList.remove('active');
         });
-        document.getElementById(target).classList.add('active');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        const targetSection = document.querySelector(sectionId);
+        const targetLink = document.querySelector(`a[href="${sectionId}"]`);
+        
+        if (targetSection && targetLink) {
+            targetSection.classList.add('active');
+            targetLink.classList.add('active');
+        }
     }
 
-    // Add click event listener to each navbar link
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default anchor behavior
-            const target = link.getAttribute('data-target');
-            showSection(target);
+            e.preventDefault();
+            const sectionId = link.getAttribute('href');
+            showSection(sectionId);
+            history.pushState(null, '', sectionId);
         });
     });
 
-    // Show the home section by default when the page loads
-    showSection('home');
+    window.addEventListener('popstate', () => {
+        const sectionId = window.location.hash || '#home';
+        showSection(sectionId);
+    });
 });
