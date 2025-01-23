@@ -1,4 +1,44 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>MDC - Unlock API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
 
+    <div id="what-is-api" class="api-section">
+        <div class="api-container">
+            <div class="api-text-box">
+                <h2>What is an <span class="blue-text">API</span>?</h2>
+                <p class="api-paragraph active">An Application Programming Interface (API) is a set of rules and protocols that allows different software applications to communicate with each other.</p>
+                <p class="api-paragraph">It acts as a messenger that processes requests and ensures seamless communication between applications and databases.</p>
+                <p class="api-paragraph">Think of an API as a <b>waiter in a restaurant.</b> Just as a waiter takes your order to the kitchen and brings back your food, an API takes requests from an application, processes them with the server, and returns the necessary data.</p>
+                <button class="next-paragraph">Next</button>
+            </div>
+            <div class="api-image-box">
+                <img src="api1.svg" alt="API Diagram">
+            </div>
+        </div>
+
+        <div class="grid-boxes">
+            <div class="grid-box">Feature 1</div>
+            <div class="grid-box">Feature 2</div>
+            <div class="grid-box">Feature 3</div>
+            <div class="grid-box">Feature 4</div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
+ -->
+
+
+
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>MDC - Unlock API</title>
@@ -19,42 +59,81 @@
 
     <div class="hero-section">
         <div class="animated-content">
-            <div class="presenter"><h1>MDC</h1> </div>
-            
+            <div class="presenter"><h1>MDC</h1></div>
             <div class="main-content">
-                <h4 class="presents">Presents </h4>
-                <h1 class="main-title"> UNLOCKING API</h1>
-                
+                <h4 class="presents">Presents</h4>
+                <h1 class="main-title">UNLOCKING API</h1>
                 <p class="subtitle">Master the power of modern web development</p>
                 <button class="get-started-btn">Get Started</button>
             </div>
         </div>
     </div>
+
     <div id="what-is-api" class="api-section">
         <div class="api-container">
-            <div class="api-text-box">
+            <div class="api-text-box expandable">
                 <h2>What is an <span class="blue-text">API</span>?</h2>
-                <p>An Application Programming Interface (API) is a set of rules and protocols that allows different software applications to communicate with each other. It acts as a messenger that processes requests and ensures seamless communication between applications and databases.</p>
-                <p>Think of an API as a <b>waiter in a restaurant.</b> Just as a waiter takes your order to the kitchen and brings back your food, an API takes requests from an application, processes them with the server, and returns the necessary data or performs the requested actions.</p>
+                <div class="content">
+                    <p class="api-paragraph">Think of an API as a <b>waiter in a restaurant.</b> Just as a waiter takes your order to the kitchen and brings back your food, an API takes requests from an application, processes them with the server, and returns the necessary data.</p>
+                    <p class="api-paragraph">It acts as a messenger that processes requests and ensures seamless communication between applications and databases.</p>
+                    <p class="api-paragraph">An Application Programming Interface (API) is a set of rules and protocols that allows different software applications to communicate with each other.</p>
+                </div>
             </div>
             <div class="api-image-box">
-                <img src="path-to-your-api-image.jpg" alt="API Diagram">
+                <img src="api1.svg" alt="API Diagram">
             </div>
         </div>
-    </div>
-    <div id="how-apis-work" class="how-api-section">
-        <div class="api-container">
-            <div class="api-text-box">
-                <h2>How does an <span class="blue-text">API</span> work ?</h2>
-                <p>An Application Programming Interface (API) is a set of rules and protocols that allows different software applications to communicate with each other. It acts as a messenger that processes requests and ensures seamless communication between applications and databases.</p>
-                <p>Think of an API as a <b>waiter in a restaurant.</b> Just as a waiter takes your order to the kitchen and brings back your food, an API takes requests from an application, processes them with the server, and returns the necessary data or performs the requested actions.</p>
+
+        <div class="grid-boxes">
+            <div class="grid-item">
+                <div class="grid-box">Request</div>
+                <div class="arrow">
+                    <svg viewBox="0 0 50 20">
+                        <path d="M0 10 L40 10 L35 5 L40 10 L35 15" stroke="#007BFF" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
             </div>
-            <div class="api-image-box">
-                <img src="aP36Q8G_700b.jpgaP36Q8G_700b.jpg" alt="API Diagram">
+            <div class="grid-item">
+                <div class="grid-box">Process</div>
+                <div class="arrow">
+                    <svg viewBox="0 0 50 20">
+                        <path d="M0 10 L40 10 L35 5 L40 10 L35 15" stroke="#007BFF" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-box">Response</div>
+                <div class="arrow">
+                    <svg viewBox="0 0 50 20">
+                        <path d="M0 10 L40 10 L35 5 L40 10 L35 15" stroke="#007BFF" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-box">Result</div>
             </div>
         </div>
     </div>
 
+    <div id="how-apis-work" class="api-section">
+        <div class="api-container">
+            <div class="api-text-box">
+                <h2>How does an <span class="blue-text">API</span> work?</h2>
+                <p class="api-paragraph active">APIs work by providing a standardized way for applications to request and exchange data.</p>
+                <p class="api-paragraph">When an application makes an API request, it sends a specific command or query to the API endpoint.</p>
+                <p class="api-paragraph">The API then processes this request, retrieves or modifies the necessary data, and sends back an appropriate response.</p>
+                <button class="next-paragraph">Next</button>
+            </div>
+            <div class="api-image-box">
+                <img src="api2.svg" alt="API Working Diagram">
+            </div>
+        </div>
+    </div>
+
+  
     <script src="script1.js"></script>
+
 </body>
 </html>
+
+
